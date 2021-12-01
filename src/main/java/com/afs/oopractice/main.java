@@ -1,10 +1,5 @@
 package com.afs.oopractice;
 
-import com.sun.xml.internal.ws.api.pipe.Engine;
-
-import java.sql.*;
-import java.util.Properties;
-import java.util.logging.Logger;
 
 public class main {
     public static void main(String[] args) {
@@ -20,8 +15,10 @@ public class main {
 
 //        gasolineEngine
 //        Engine engine = new Engine();
+        Car electricCar = new Car("car",new electricEngine());
+        Car gasolineCar = new Car("truck",new gasolineEngine());
+        electricCar.speedUp();
+        gasolineCar.speedUp();
     }
-
-
 }
 
